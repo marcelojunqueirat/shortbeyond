@@ -1,0 +1,27 @@
+meta {
+  name: Criar novo Link
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:3333/api/links
+  body: json
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMDFLODM2VEQyS1o0WjU3M0ZEUzdETkQzRkIiLCJleHAiOjE3NjEyMTcyNDgsImlhdCI6MTc2MTEzMDg0OH0.V8DKhQpno0_HoE5Th8QL2oabtfXmyU9Quzyg_rdmbSc
+}
+
+body:json {
+  {
+    "original_url": "https://www.youtube.com/watch?v=fOdSUtGmxwU&list=PLksYBot4hlbhkgSpzf1uXi-H9IckpJu7H",
+    "title": "Playlist série Pacificador"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
