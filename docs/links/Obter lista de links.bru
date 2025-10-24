@@ -1,0 +1,27 @@
+meta {
+  name: Obter lista de links
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://localhost:3333/api/links
+  body: none
+  auth: inherit
+}
+
+headers {
+  Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMDFLODM2VEQyS1o0WjU3M0ZEUzdETkQzRkIiLCJleHAiOjE3NjEzOTAwOTMsImlhdCI6MTc2MTMwMzY5M30.aPDUQTzePz1cI45M-It7Oj2BlMirhN-4D7NvlawwCR8
+}
+
+body:json {
+  {
+    "original_url": "https://www.youtube.com/watch?v=fOdSUtGmxwU&list=PLksYBot4hlbhkgSpzf1uXi-H9IckpJu7H",
+    "title": "Playlist série Pacificador"
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
