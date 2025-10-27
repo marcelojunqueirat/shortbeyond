@@ -1,12 +1,12 @@
 meta {
-  name: Criar novo Link
+  name: Remove um link encurtado
   type: http
-  seq: 1
+  seq: 3
 }
 
-post {
-  url: http://localhost:3333/api/links
-  body: json
+delete {
+  url: http://localhost:3333/api/links/01K8JNDSDH6YV67M10Q3MK891F
+  body: none
   auth: inherit
 }
 
