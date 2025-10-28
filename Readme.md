@@ -15,6 +15,9 @@ sudo podman pod stop (start) shortbeyond
 ### Comandos
 npx playwright test  
 npx playwright test --ui  
-1 - Executa os testes com ou sem interface gráfica (roda os testes da pasta configurada em - playwright.config.js > testDir) 
+1 - Executa os testes com ou sem interface gráfica (roda os testes da pasta configurada em - playwright.config.js > testDir)  
 
+
+npx playwright test --reporter=list ou --reporter=dot
+2 - Relatórios em lista ou em pontos
 
